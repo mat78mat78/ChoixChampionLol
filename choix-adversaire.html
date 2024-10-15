@@ -1,1 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selection de l'ennemi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+    }
+    .champion-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .champion {
+      margin: 10px;
+      padding: 10px;
+      background-color: #fff;
+      border: 2px solid #333;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    .champion:hover {
+      background-color: #f0c040;
+    }
+    img {
+      width: 80px;
+      height: 80px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Choisis le Champion Ennemi</h1>
+  <div class="champion-grid">
+    <div class="champion" onclick="window.location.href='recommandation.html';">
+      <img src="images/yasuo.png" alt="Yasuo">
+      <p>Yasuo</p>
+    </div>
+    <div class="champion" onclick="window.location.href='recommandation.html';">
+      <img src="images/lux.png" alt="Lux">
+      <p>Lux</p>
+    </div>
+    <!-- Continue d'ajouter tous les champions mid ici -->
+  </div>
+</body>
+</html>
 
